@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Style général de la liste */
+ul {
+  list-style-type: none; /* Supprime les puces */
+  padding: 0; /* Supprime le rembourrage par défaut */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style des éléments de la liste */
+li {
+  background-color: #f0f0f0; /* Couleur de fond gris clair */
+  margin: 10px 0; /* Marge entre les éléments de la liste */
+  padding: 15px; /* Rembourrage interne */
+  border-radius: 5px; /* Coins arrondis */
+  transition: background-color 0.3s; /* Effet de transition */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Changement de couleur au survol */
+li:hover {
+  background-color: #d0e0f0; /* Couleur de fond bleu clair au survol */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Style pour le nom de l'utilisateur */
+strong {
+  color: #333; /* Couleur du texte pour le nom */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style pour l'email de l'utilisateur */
+p.email {
+  color: #555; /* Couleur du texte pour l'email */
 }
